@@ -22,7 +22,7 @@
                 <p class="d_date">Datum</p>
                 <input type="date" name="date" class="date" id="date">
                 <p class="d_seat">Sedadlo</p>
-                <input type="number" pattern="\d*" name="seat" class="seat" id="seat">
+                <input type="number" pattern="[0-9]*" min="0" inputmode="numeric" name="seat" class="seat" id="seat">
                 <input type="button" name="btn" class="create" value="Vytvořit lístek" onclick="GenerateTicket()">
             </div>
         </form>
