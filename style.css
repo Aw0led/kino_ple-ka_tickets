@@ -1,0 +1,89 @@
+body{
+    background-color: #191f24;
+}
+
+body h1{
+    color: white;
+    margin: 0px;
+}
+
+.con_main{
+    display: grid;
+    place-items: center;
+    height: 25vh;
+}
+
+/*.ticket_wrappper{
+    min-height: 100%;
+    position: relative;
+}*/
+
+.container{
+    width: 100%;
+    color: white;
+    background-color: #101519;
+    padding: 5px;
+    display: grid;
+    grid-template-areas:
+        "d_movie d_movie"
+        "movie movie"
+        "d_fname d_lname"
+        "fname lname"
+        "d_date d_date"
+        "date date"
+        "d_seat d_seat"
+        "seat btn";
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+}
+
+/*INPUTS*/
+.container p { margin-bottom: 0px; }
+.container .movie { grid-area: movie; }
+.container .fname { grid-area: fname; }
+.container .lname { grid-area: lname; }
+.container .date { grid-area: date; }
+.container .seat { grid-area: seat; }
+.container .create { grid-area: btn; }
+
+/*DESCRIPTIONS*/
+.container .d_movie { grid-area: d_movie; }
+.container .d_fname { grid-area: d_fname; }
+.container .d_lname { grid-area: d_lname; }
+.container .d_date { grid-area: d_date; }
+.container .d_seat { grid-area: d_seat; }
+
+/*TICKET*/
+.ticket_con {
+    position: relative;
+    bottom: -25vh;
+    text-align: center;
+    visibility: hidden;
+    color: white;
+    font-size: xx-large;
+    background-color: #101519;
+    padding: 15px;
+    display: grid;
+    grid-template-areas:
+        "t_barcode t_num t_mov_name t_mov_name t_mov_name"
+        "t_barcode t_num t_fname t_lname t_seat"
+        "t_barcode t_num t_date t_date t_date";
+    
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.t_barcode { grid-area: t_barcode; }
+.t_num {
+    grid-area: t_num;
+    transform: rotate(-90deg);
+}
+.t_mov_name { grid-area: t_mov_name; }
+.t_fname { grid-area: t_fname; }
+.t_lname { grid-area: t_lname; }
+.t_seat { grid-area: t_seat; }
+.t_date { grid-area: t_date; }
