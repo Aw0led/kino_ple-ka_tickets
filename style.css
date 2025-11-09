@@ -17,10 +17,10 @@ body h1{
     height: 25vh;
 }
 
-/*.ticket_wrappper{
+.ticket_wrappper{
     min-height: 100%;
     position: relative;
-}*/
+}
 
 .container{
     width: 100%;
@@ -91,3 +91,7 @@ body h1{
 .t_lname { grid-area: t_lname; }
 .t_seat { grid-area: t_seat; }
 .t_date { grid-area: t_date; }
+
+input[type="date"]{
+    -webkit-appearance: none;
+}

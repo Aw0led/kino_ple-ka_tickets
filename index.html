@@ -11,21 +11,21 @@
 <body>
     <h1><center>Kino Pleška - Lístky</center></h1>
     <div class="con_main">
-            <form>
-                <div class="container">
-                    <p class="d_movie">Název filmu</p>
-                    <input type="text" name="movie" class="movie" id="movie">
-                    <p class="d_fname">Jméno</p>
-                    <input type="text" name="fname" class="fname" id="fname">
-                    <p class="d_lname">Příjmění</p>
-                    <input type="text" name="lname" class="lname" id="lname">
-                    <p class="d_date">Datum</p>
-                    <input type="date" name="date" class="date" id="date">
-                    <p class="d_seat">Sedadlo</p>
-                    <input type="number" name="seat" class="seat" id="seat">
-                    <input type="button" name="btn" class="create" value="Vytvořit lístek" onclick="GenerateTicket()">
-                </div>
-            </form>
+        <form>
+            <div class="container">
+                <p class="d_movie">Název filmu</p>
+                <input type="text" name="movie" class="movie" id="movie">
+                <p class="d_fname">Jméno</p>
+                <input type="text" name="fname" class="fname" id="fname">
+                <p class="d_lname">Příjmění</p>
+                <input type="text" name="lname" class="lname" id="lname">
+                <p class="d_date">Datum</p>
+                <input type="date" name="date" class="date" id="date">
+                <p class="d_seat">Sedadlo</p>
+                <input type="number" pattern="\d*" name="seat" class="seat" id="seat">
+                <input type="button" name="btn" class="create" value="Vytvořit lístek" onclick="GenerateTicket()">
+            </div>
+        </form>
     </div>
     <div class="ticket_wrapper">
         <div class="ticket_con" id="t_container">
